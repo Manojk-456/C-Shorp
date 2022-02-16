@@ -1,28 +1,21 @@
 ﻿using System;
 
-namespace Matrix2
+namespace NumberPrint
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[,] data = new int[3,3];
-            Console.WriteLine("Enter 9 digit for matrix :");
-            for(int i=0;i<3;i++)
+            Console.WriteLine("1 to 100 number printing :");
+            for(int i=1;i<=100;i++)
             {
-                for(int j=0;j<3;j++)
-                {
-                    data[i,j] = int.Parse(Console.ReadLine());
-                }
+                Console.Write(i + "\t");
             }
-            Console.WriteLine("Display the input element");
-            for(int i=0;i<3;i++)
+            Console.WriteLine();
+            Console.WriteLine("100 to 1 number printing :");
+            for(int i=100;i>=1;i--)
             {
-                for(int j=0;j<3;j++)
-                {
-                    Console.Write(data[i, j] + " ");
-                }
-                Console.WriteLine();
+                Console.Write(i + "\t");
             }
             Console.ReadLine();
 

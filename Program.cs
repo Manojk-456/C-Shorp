@@ -1,12 +1,21 @@
 ﻿using System;
 
-namespace Matrix
+namespace Matrix2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[,] data = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+            int[,] data = new int[3,3];
+            Console.WriteLine("Enter 9 digit for matrix :");
+            for(int i=0;i<3;i++)
+            {
+                for(int j=0;j<3;j++)
+                {
+                    data[i,j] = int.Parse(Console.ReadLine());
+                }
+            }
+            Console.WriteLine("Display the input element");
             for(int i=0;i<3;i++)
             {
                 for(int j=0;j<3;j++)
@@ -15,6 +24,8 @@ namespace Matrix
                 }
                 Console.WriteLine();
             }
+            Console.ReadLine();
+
         }
     }
 }

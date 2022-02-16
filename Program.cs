@@ -1,24 +1,22 @@
 ﻿using System;
 
-namespace NumberPrint
+namespace SumOfNumber
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1 to 100 number printing :");
-            for(int i=1;i<=100;i++)
+            Console.WriteLine("Enter the max number to find range sum :");
+            int n=int.Parse(Console.ReadLine());
+            int sum = 0;
+            while(n>0)
             {
-                Console.Write(i + "\t");
+                sum += n;
+                Console.Write(n + "\t");
+                n--;
             }
             Console.WriteLine();
-            Console.WriteLine("100 to 1 number printing :");
-            for(int i=100;i>=1;i--)
-            {
-                Console.Write(i + "\t");
-            }
-            Console.ReadLine();
-
+            Console.WriteLine("sum of the number is : " + sum);
         }
     }
 }

@@ -1,21 +1,20 @@
 ﻿using System;
 
-namespace Factorial
+namespace Matrix
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the number to find Factorial :");
-            int fact = 1;
-            int n = int.Parse(Console.ReadLine());
-            while(n>0)
+            int[,] data = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+            for(int i=0;i<3;i++)
             {
-                fact = fact * n;
-                n--;
+                for(int j=0;j<3;j++)
+                {
+                    Console.Write(data[i, j] + " ");
+                }
+                Console.WriteLine();
             }
-            Console.WriteLine("factorial of this number is : " + fact);
-            Console.ReadLine();
         }
     }
 }

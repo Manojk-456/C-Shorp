@@ -1,0 +1,41 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+    /******************************************************************************
+
+                            Online C# Compiler.
+                Code, Compile, Run and Debug C# program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+using System;
+class Sum
+{
+    public int add(int a,int b)
+    {
+        int sum=a+b;
+        return sum;
+     }
+    public int add(int a,int b,int c)
+    {
+        int sum=a+b+c;
+        return sum;
+    
+    }
+    
+    
+  public static void Main(string[] args)
+  {
+      Sum obj=new Sum();
+      int sum1=obj.add(12,45);
+      Console.WriteLine("Sum of two number is :"+sum1);
+      Console.WriteLine();
+      
+      int sum2=obj.add(124,45,74);
+      Console.WriteLine("Sum of three number is :"+sum2);
+      Console.WriteLine();
+      
+      Console.ReadLine();
+  }
+}
+

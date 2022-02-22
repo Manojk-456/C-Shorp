@@ -1,0 +1,27 @@
+using System;
+
+namespace Assignment
+{
+    class program1
+    {
+        public static int n;
+
+        public static void cube(int num)
+        {
+            n = num;
+            int res = n*n*n;
+            Console.WriteLine("Cube of the number {0} is {1}",n,res);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                Console.WriteLine("Enter the number to find the cube : ");
+                int n = int.Parse(Console.ReadLine());
+                program1.cube(n);
+
+            Console.ReadKey();
+        }
+    }
+}

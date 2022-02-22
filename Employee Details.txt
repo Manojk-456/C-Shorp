@@ -1,0 +1,32 @@
+/******************************************************************************
+
+                            Online C# Compiler.
+                Code, Compile, Run and Debug C# program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+using System;
+class employee
+{
+    public int salary;
+    public int id;
+    public string name;
+    public void data(int salary,int id,string name)
+    {
+        this.salary=salary;
+        this.id=id;
+        this.name=name;
+        Console.WriteLine("Employee salary :{0} id :{1} and name : {2} ",this.salary,this.id,this.name);
+    }
+
+} 
+class Program
+{
+  public static void Main(string[] args)
+  {
+      employee obj=new employee();
+      obj.data(1000,123,"Manoj Kumar");
+      Console.ReadLine();
+  }
+}

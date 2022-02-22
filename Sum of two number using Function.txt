@@ -1,0 +1,26 @@
+using System;
+
+namespace Assignment
+{
+    class Program
+    {
+        public int sum()
+        {
+            Console.WriteLine("Enter the First Number : ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the Second Number :");
+             int b = int.Parse(Console.ReadLine());
+             int c = 0;
+            c = a + b;
+            return c;
+
+        }
+        static void Main(string[] args)
+        {
+            Program obj = new Program();
+            int res=obj.sum();
+            Console.WriteLine("sum of two numbers is : "+res);
+            Console.ReadLine();
+        }
+    }
+}

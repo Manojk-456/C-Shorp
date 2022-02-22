@@ -1,0 +1,40 @@
+using System;
+
+namespace Assignment
+{
+    class Stdetail
+    {
+        private int rollno;
+        private string name;
+        private string subject;
+
+        public void insert(int rollno, string name, string subject)
+        {
+            this.name = name;
+            this.rollno = rollno;
+            this.subject = subject;
+        }
+        public void display()
+        {
+            Console.WriteLine("Student RollNo is : {0} Name : {1} and Subject : {2}.", this.rollno, this.name, this.subject);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                Console.WriteLine("Enter Student Rollno :");
+                int rollno = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter Your Name :");
+                string name = Console.ReadLine();
+                Console.WriteLine("Enter Your Subject :");
+                string sub = Console.ReadLine();
+
+                Stdetail obj = new Stdetail();
+                obj.insert(rollno,name,sub);
+                obj.display();
+
+            Console.ReadLine();
+        }
+    }
+}

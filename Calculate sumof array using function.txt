@@ -1,0 +1,32 @@
+/******************************************************************************
+
+                            Online C# Compiler.
+                Code, Compile, Run and Debug C# program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+using System;
+class Array
+{
+    public void sum(int[] data)
+    {
+        int l,i,sum=0;
+        l=data.Length;
+        for(i=0;i<l;i++)
+        {
+            Console.WriteLine("element : {0} - {1}",i,data[i]);
+            sum=sum+data[i];
+        }
+        
+      Console.Write("length of array is :{0} and sum of array element is :{1}",l,sum);
+    }
+  public static void Main(string[] args)
+  {
+      
+        int[] data={1,2,4,5,6,63,5};
+      Array obj=new Array();
+      obj.sum(data);
+      Console.ReadLine();
+  }
+}

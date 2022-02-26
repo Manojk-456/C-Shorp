@@ -1,0 +1,28 @@
+using System;
+using System.IO;
+
+namespace Exceptions
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Enter the pin :");
+            int pin = int.Parse(Console.ReadLine());
+            Pin(pin);
+
+        }
+        static void Pin(int p)
+        {
+            if(p==456)
+            {
+                Console.WriteLine("Pin is currect :");
+            }
+            else
+            {
+                throw new ArgumentException("Your pin is incurrect plz currect pin :");
+            }
+        }
+    }
+}

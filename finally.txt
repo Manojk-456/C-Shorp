@@ -1,0 +1,29 @@
+using System;
+using System.IO;
+
+namespace Exceptions
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            try
+            {
+                int[] data = { 1, 2, 5, 15, 58, 50, 56 };
+                Console.WriteLine(data[1]);
+            }
+            catch (Exception e)
+            {
+                //Console.WriteLine(e.Message);// Compiler according exception 
+                Console.WriteLine("index out of bound");// User according Exception message
+            }
+            finally
+            {
+                Console.WriteLine("try and catch executed successfully");
+                //Exception ho ya n ho hamara finally block always executed
+            }
+
+        }
+    }
+}

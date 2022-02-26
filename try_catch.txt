@@ -1,0 +1,23 @@
+using System;
+using System.IO;
+
+namespace Exceptions
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            try
+            {
+                int[] data = { 1, 2, 5, 15, 58, 50, 56 };
+                Console.WriteLine(data[10]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine("index out of bound");
+            }
+        }
+    }
+}

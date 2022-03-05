@@ -1,18 +1,32 @@
 ﻿using System;
 
-namespace Table
+namespace ConsoleApp2
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Enter a number to find Table :");
-            int n = int.Parse(Console.ReadLine());
-            for(int i=1;i<=10;i++)
-            {
-                Console.WriteLine(n + " * " + i + " = " + n * i);
-            }
-            Console.ReadLine();
-        }
-    }
-}
+      class Program
+      {
+          static void Main(string[] args)
+          {
+             for(int i=1;i<=5;i++)
+              {
+                  Console.Write("*"+" ");
+              }
+              Console.WriteLine();
+             for(int i=1;i<=4;i++)
+              {
+                  for(int j=1;j<=5;j++)
+                  {
+                      if(j==3)
+                      {
+                          Console.Write("*");
+                      }
+                      Console.Write("  ");
+
+                  }
+                  Console.WriteLine();
+              }
+              Console.ReadLine();
+          }
+      }
+  }
+   
+ }

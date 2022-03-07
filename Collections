@@ -1,0 +1,105 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+    
+using System;
+using System.Collections.Generic;
+internal class Program
+{
+   
+ /*
+ class Employee
+    {
+        public int id;
+        public string Name;
+        public string department;
+        
+        public Employee(int i,string name,string dept)
+        {
+            this.id=i;
+            this.Name=name;
+            this.department=dept;
+            
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+        /*
+        List<int> data=new List<int>();
+        data.Add(123);
+        data.Add(323);
+        data.Add(75);
+        foreach(int i in data)
+        {
+            Console.WriteLine(i);
+        }
+        */
+        /*
+        Dictionary<int,string> data=new Dictionary<int,string>();
+        data.Add(1,"Manoj Kumar");
+        data.Add(3,"Sanjay Singh");
+        data.Add(5,".NeT Developer");
+        foreach(object i in data)
+        {
+            Console.WriteLine(i);
+        }
+          Console.ReadLine();
+    */
+    
+    /*Employee emp1=new Employee(123,"Manoj Kumar",".NeT Developer");
+    Employee emp2=new Employee(456,"Sanjay","php");
+    Employee emp3=new Employee(789,"Aditya","java");
+    
+    List<Employee> data=new List<Employee>();
+    data.Add(emp1);
+    data.Add(emp2);
+    data.Add(emp3);
+    
+    foreach(Employee emp in data)
+    {
+        
+        Console.WriteLine("Employee id is :"+emp.id);
+        Console.WriteLine("Employee Name is :"+emp.Name);
+        Console.WriteLine("Employee department is :"+emp.department);
+    }
+    Console.ReadLine();
+    }
+    */
+    /*
+    class Employee
+    {
+        public int id;
+        public string Name;
+        public string department;
+        
+        public Employee(int i,string name,string dept)
+        {
+            this.id=i;
+            this.Name=name;
+            this.department=dept;
+            Console.WriteLine("Id :{0} name :{1} department :{2}",id,Name,department);
+            
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+    Employee emp1=new Employee(123,"Manoj Kumar",".NeT Developer");
+    Employee emp2=new Employee(456,"Sanjay","php");
+    Employee emp3=new Employee(789,"Aditya","java");
+    }
+    */
+     Hashtable data= new Hashtable();
+    data.Add(12,"Chetu");
+    data.Add(13,"India");
+    data.Add(14,"MNC");
+    data.Add(15,"Company");
+    
+    foreach(DictionaryEntry i in data)
+    {
+        Console.WriteLine(" Key "+i.Key+" Value "+i.Value);
+    }
+    
+    Console.ReadLine();
+}
+
